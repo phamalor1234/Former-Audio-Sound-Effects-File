@@ -1,0 +1,24 @@
+interface AudioFile {
+  title: string;
+  subtitle: string;
+  note: string;
+  files: {
+    [key: string]: string;
+  };
+}
+
+const audioFiles: AudioFile = {
+  title: "YAML AUDIO FILES",
+  subtitle: "The Audio with YAML",
+  note: "This audio with 200 ok present.",
+  files: {
+    "Audio 1": "Format voice YAML demo 01.wav",
+    "Audio 2": "Format voice YAML demo 02.wav",
+    "Audio 3": "Format voice YAML demo 03.wav",
+    "Audio 4": "Format voice YAML demo 04.wav",
+    "Audio 5": "Format voice YAML demo 05.wav",
+    "Audio 6": "Format voice YAML demo 06.wav",
+  },
+};
+
+console.log(audioFiles);
